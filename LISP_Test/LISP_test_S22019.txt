@@ -1,0 +1,31 @@
+Part 1: Short questions
+
+1. (caar '(a b c))
+ERROR
+
+2. (caar (cddr '(a b (c d))))
+C
+
+3. (cons (append '(b c) '(d e)) (list '(b c) '(d e)))
+((b c d e) (b c) (d e))
+
+4. (list '(car (a b c)) '(cdr (d ef)))
+((car (a b c)) (cdr (d ef)))
+
+5. (list (1- 1) (1+ 1) '(2 * 3))
+(0 2 (2 * 3))
+
+6. Given (defun test (&optional a b) (append a b)), what is returned with a call, (test '(a b c d e))?
+(a b c d e)
+
+7. Given (defun test1 (&key a (b 5) c) (+ a b c)), how do you call test1 with a assigned a value of 10 and c a value of 12?
+(test1 :a 10 :c 12)
+
+8. (cadr (last (last (last '(a b c)))))
+NIL
+
+9. Given (defun test2 (&rest L) (car L)), what is assigned to L with a call (test2 a b c d)?
+'(a b c d)
+
+10. (list '(a b) '(c d))
+((a b) (c d))
