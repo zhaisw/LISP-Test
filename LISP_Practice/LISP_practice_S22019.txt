@@ -29,3 +29,7 @@ NIL
 
 10. (list '(a b) '(c d))
 ((a b) (c d))
+
+Part 2: 
+
+1. Write a LISP function, sum-first-three, which given a list will return the sum of the first three numbers in it.
